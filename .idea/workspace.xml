@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3524698b-e0b8-434a-8f6d-d52f0b96a623" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/new_script.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player scripts/new_script.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_script.gd.uid" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player scripts/new_script.gd.uid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/GdSdk_Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/GdSdk_Master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +41,16 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;gdscript.promo.shown&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -63,9 +66,9 @@
       <method v="2" />
     </configuration>
     <configuration name="Editor" type="RunNativeExe" factoryName="Native Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../Godot_v4.4.1-stable_mono_win64.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Godot_v4.4.1-stable_mono_linux.x86_64" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot; --editor" />
-      <option name="WORKING_DIRECTORY" value="A:\Godot\Projects\Gun Sword game" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
@@ -83,6 +86,8 @@
       <updated>1752689460757</updated>
       <workItem from="1752689461956" duration="547000" />
       <workItem from="1752690028031" duration="56000" />
+      <workItem from="1752954214783" duration="215000" />
+      <workItem from="1752954443300" duration="247000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -122,5 +127,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
