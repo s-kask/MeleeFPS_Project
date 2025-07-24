@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://515p4gi5xbgo"]
+
+[ext_resource type="Texture2D" uid="uid://wieqjuscswvh" path="res://addons/prototype_mini_bundle/prototype_dark.png" id="1_f0p7x"]
+[ext_resource type="PackedScene" uid="uid://0vmntyr615js" path="res://addons/prototype_mini_bundle/prop_cube.tscn" id="2_vtm10"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0f05"]
+albedo_texture = ExtResource("1_f0p7x")
+uv1_scale = Vector3(100, 100, 100)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material_override = SubResource("StandardMaterial3D_a0f05")
+size = Vector3(100, 0.001, 100)
+
+[node name="PropCube" parent="." instance=ExtResource("2_vtm10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.388376, 0.545552, -1.49851)

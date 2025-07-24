@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3524698b-e0b8-434a-8f6d-d52f0b96a623" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/new_script.gd" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player scripts/new_script.gd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_script.gd.uid" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/player scripts/new_script.gd.uid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/player scripts/new_script.gd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/player scripts/new_script.gd.uid" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +84,7 @@
       <updated>1752689460757</updated>
       <workItem from="1752689461956" duration="547000" />
       <workItem from="1752690028031" duration="56000" />
+      <workItem from="1752690522670" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
