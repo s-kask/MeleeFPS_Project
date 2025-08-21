@@ -4,4 +4,7 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <RootNamespace>MeleeFPSProjectV2</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="scenes\" />
+  </ItemGroup>
 </Project>
