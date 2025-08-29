@@ -14,7 +14,7 @@ public partial class Moving : State
     {
         if (Input.IsActionJustPressed("jump"))
         {
-            msm.TransitionTo("JUMPING");
+            msm.TransitionTo("JUMP");
         }
     }
 

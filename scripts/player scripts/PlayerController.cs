@@ -8,7 +8,7 @@ public partial class PlayerController : CharacterBody3D
 	private int _minRotation = -90;
 
 	private MovementStateMachine _msm;
-	private Camera3D _pov;
+	private Node3D _pov;
 
 	public string[] BasicMoveActions = { "move_forward", "move_back", "move_left", "move_right" };
 
@@ -16,7 +16,7 @@ public partial class PlayerController : CharacterBody3D
 	{
 		_msm = GetNode<MovementStateMachine>("MovementStateMachine");
 		_msm._Ready();
-		_pov = GetNode<Camera3D>("POV");
+		_pov = GetNode<Node3D>("Head");
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 	}
 

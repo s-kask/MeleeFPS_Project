@@ -1,12 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://515p4gi5xbgo"]
+[gd_scene load_steps=9 format=3 uid="uid://515p4gi5xbgo"]
 
 [ext_resource type="Texture2D" uid="uid://wieqjuscswvh" path="res://addons/prototype_mini_bundle/prototype_dark.png" id="1_f0p7x"]
+[ext_resource type="Material" uid="uid://brj2jayoo0l0d" path="res://addons/prototype_mini_bundle/M_prototype_blue.tres" id="2_a0f05"]
 [ext_resource type="PackedScene" uid="uid://0vmntyr615js" path="res://addons/prototype_mini_bundle/prop_cube.tscn" id="2_vtm10"]
 [ext_resource type="PackedScene" uid="uid://xbxdinvcm02" path="res://scenes/player_controller.tscn" id="3_vtm10"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0f05"]
 albedo_texture = ExtResource("1_f0p7x")
 uv1_scale = Vector3(100, 100, 100)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vtm10"]
+
+[sub_resource type="Sky" id="Sky_a0f05"]
+sky_material = SubResource("ProceduralSkyMaterial_vtm10")
+
+[sub_resource type="Environment" id="Environment_vtm10"]
+background_mode = 2
+sky = SubResource("Sky_a0f05")
 
 [node name="Node3D" type="Node3D"]
 
@@ -15,8 +25,38 @@ material_override = SubResource("StandardMaterial3D_a0f05")
 use_collision = true
 size = Vector3(100, 0.001, 100)
 
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 49.9321, 22, 0)
+material_override = ExtResource("2_a0f05")
+use_collision = true
+size = Vector3(45.3088, 0.001, 100)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, 0.015522, 22, 49)
+material_override = ExtResource("2_a0f05")
+use_collision = true
+size = Vector3(45.3088, 0.001, 100)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1.91069e-15, 4.37114e-08, 1, 1, -4.37114e-08, 0, 4.37114e-08, 1, -4.37114e-08, -0.317707, 22, -50)
+material_override = ExtResource("2_a0f05")
+use_collision = true
+size = Vector3(45.3088, 0.001, 100)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -50.0679, 22, 0)
+material_override = ExtResource("2_a0f05")
+use_collision = true
+size = Vector3(45.3088, 0.001, 100)
+
 [node name="PropCube" parent="." instance=ExtResource("2_vtm10")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.388376, 0.545552, -1.49851)
 
 [node name="PlayerController" parent="." instance=ExtResource("3_vtm10")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0494413, 0.956644, 0.111642)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_vtm10")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.610947, 0.791672, 0, -0.791672, 0.610947, 0, 47.031, 40.9829)

@@ -1,12 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://xbxdinvcm02"]
+[gd_scene load_steps=12 format=3 uid="uid://xbxdinvcm02"]
 
 [ext_resource type="Script" uid="uid://cbdeqvqbiq0mk" path="res://scripts/player scripts/PlayerController.cs" id="1_8xumb"]
 [ext_resource type="Material" uid="uid://dgjiw8udooecr" path="res://addons/prototype_mini_bundle/M_prototype_dark.tres" id="2_8xumb"]
-[ext_resource type="Script" uid="uid://c1kccno5nmh38" path="res://scripts/player scripts/MovementStateMachine.cs" id="3_jh7gh"]
-[ext_resource type="Script" uid="uid://cv36pkp0ok4n4" path="res://scripts/player scripts/Idle.cs" id="4_uxksl"]
-[ext_resource type="Script" uid="uid://343urjtsic8" path="res://scripts/player scripts/Falling.cs" id="5_uxksl"]
-[ext_resource type="Script" uid="uid://r8yc1wd4oy28" path="res://scripts/player scripts/Jump.cs" id="6_0c017"]
-[ext_resource type="Script" uid="uid://bbc1hkpiqf721" path="res://scripts/player scripts/Moving.cs" id="7_7va2w"]
+[ext_resource type="Script" uid="uid://8hb0usogk1rb" path="res://scripts/player scripts/ActionHandler.cs" id="3_ga2kn"]
+[ext_resource type="Script" uid="uid://c1kccno5nmh38" path="res://scripts/entity scripts/movement/MovementStateMachine.cs" id="3_jh7gh"]
+[ext_resource type="Script" uid="uid://bg6ohjokykyb3" path="res://scripts/player scripts/WeaponSystem.cs" id="4_lwvb4"]
+[ext_resource type="Script" uid="uid://cv36pkp0ok4n4" path="res://scripts/entity scripts/movement/Idle.cs" id="4_uxksl"]
+[ext_resource type="Script" uid="uid://343urjtsic8" path="res://scripts/entity scripts/movement/Falling.cs" id="5_uxksl"]
+[ext_resource type="Script" uid="uid://r8yc1wd4oy28" path="res://scripts/entity scripts/movement/Jump.cs" id="6_0c017"]
+[ext_resource type="Script" uid="uid://bbc1hkpiqf721" path="res://scripts/entity scripts/movement/Moving.cs" id="7_7va2w"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_jh7gh"]
 
@@ -22,6 +24,12 @@ mesh = SubResource("CapsuleMesh_jh7gh")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("ConvexPolygonShape3D_uxksl")
+
+[node name="ActionHandler" type="Node" parent="."]
+script = ExtResource("3_ga2kn")
+
+[node name="WeaponSystem" type="Node" parent="."]
+script = ExtResource("4_lwvb4")
 
 [node name="MovementStateMachine" type="Node" parent="."]
 script = ExtResource("3_jh7gh")
@@ -39,5 +47,9 @@ script = ExtResource("6_0c017")
 [node name="MOVING" type="Node" parent="MovementStateMachine"]
 script = ExtResource("7_7va2w")
 
-[node name="POV" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.507429, 1.95359)
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.547354, 0)
+
+[node name="POV" type="Camera3D" parent="Head"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
